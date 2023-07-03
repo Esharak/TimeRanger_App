@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+
+
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_top"
+    tools:context=".Goal">
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menuButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/blue"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startStopButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goals"
+
+
+
+        android:id="@+id/loginText"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:elevation="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingClass">
+        </com.github.mikephil.charting.charts.BarChart>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statistics for Work "
+        android:id="@+id/Head1"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+
+
+
+        <TableRow android:background="@color/white">
+
+
+
+            <TextView
+                style="@style/table_row_text_style"
+                android:layout_marginBottom="1dp"
+                android:text="Start Date" />
+
+
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                style="@style/table_row_text_style"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:text="23 June 2023"
+                />
+        </TableRow>
+
+
+
+        <TableRow android:background="@color/white">
+
+
+
+            <TextView
+                style="@style/table_row_text_style"
+                android:layout_marginBottom="1dp"
+                android:text="End Date" />
+
+
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                style="@style/table_row_text_style"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:text="23 July 2023"
+                />
+        </TableRow>
+
+
+
+        <TableRow android:background="@color/white">
+
+
+
+            <TextView
+                style="@style/table_row_text_style"
+                android:text="Total Hours" />
+
+
+
+            <TextView
+                android:id="@+id/tvTotalTime"
+                style="@style/table_row_text_style"
+                android:layout_marginEnd="1dp"
+                android:text="62 Hours" />
+        </TableRow>
+
+
+
+        <TableRow android:background="@color/white">
+
+
+
+        </TableRow>
+
+
+
+        <TableRow android:background="@color/white">
+
+
+
+            <TextView
+                style="@style/table_row_text_style"
+                android:layout_marginBottom="1dp"
+                android:text="Maximum Goal" />
+
+
+
+            <TextView
+                android:id="@+id/tvMaximum"
+                style="@style/table_row_text_style"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:text="100 Hours" />
+        </TableRow>
+
+
+
+        <TableRow android:background="@color/white">
+
+
+
+            <TextView
+                style="@style/table_row_text_style"
+                android:layout_marginBottom="1dp"
+                android:text="Minimum Goal" />
+
+
+
+            <TextView
+                android:id="@+id/tvMinimum"
+                style="@style/table_row_text_style"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:text="80 Hours"
+                />
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:backgroundTint="@color/red"
+        android:text="Next"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_play_arrow_24" />
+
+
+
+</LinearLayout>

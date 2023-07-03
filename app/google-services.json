@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "398303004174",
+    "project_id": "timerangers-82268",
+    "storage_bucket": "timerangers-82268.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398303004174:android:86ae3d3d68a71549c39e5f",
+        "android_client_info": {
+          "package_name": "com.example.timerangers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398303004174-8qapr0phv15c0uhcnfop5cqrh4gv2c9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4lWEfGA2tPXcUjlOE40x4q9GqhsoZzio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398303004174-8qapr0phv15c0uhcnfop5cqrh4gv2c9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

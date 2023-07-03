@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCategories"
+    android:background="@drawable/gradient_background_top">
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/input_style"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:hint="     Enter Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/activityName"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter Activity Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <EditText
+        android:id="@+id/imageUrl"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter URL Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityName" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter Activity Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageUrl" />
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter Start Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter End Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+    <EditText
+        android:id="@+id/totalHours"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter Total Hours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDate" />
+
+    <EditText
+        android:id="@+id/maxGoal"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter Maximum Goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalHours" />
+
+    <EditText
+        android:id="@+id/minGoal"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_style"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="     Enter Minimum Goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxGoal" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Save Data"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minGoal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+android:inputType="txtCategory"
+android:inputType="txtActivityName"
+android:inputType="txtImageUrl"
+android:inputType="txtDescription"
+android:inputType="txtStartDate"
+android:inputType="txtEndDate"
+-->

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TimeRangers</string>
+    <!-- Base application theme. -->
+    <style name="StopwatchAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Action Bar color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Status Bar color. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Action Bar title color. -->
+        <item name="titleTextColor">@color/colorYellow</item>
+
+    </style>
+
+    <!-- No Action Bar style manually. -->
+
+    <style name="NoActionBar" parent="StopwatchAppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!-- Action Bar font family. -->
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="fontFamily">monospace</item>
+
+    </style>
+
+    <string name="roll">Roll</string>
+
+
+    <string name="selected_item">Selected Period:</string>
+    <string-array name="Languages">
+        <item>Select</item>
+        <item>Hours</item>
+        <item>Day</item>
+        <item>1 Week</item>
+        <item>1 Month</item>
+        <item>Longer</item>
+    </string-array>
+</resources>
